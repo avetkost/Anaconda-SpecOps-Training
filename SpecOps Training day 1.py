@@ -22,3 +22,15 @@ with open("File.txt", "r") as text_file:
         for line in text_file:
             line = line.title()
             new_file.write(line)
+
+"""Task #3 Օգտագործելով աղյուսակ (dictionary) հաշվել զանգվածում բոլոր թվերի կրկնությունների քանակը։"""
+
+my_array = [1, 2, 4, 5, 3, 4, 1, 2, 1, 2, 1, 3, 4, 5, 7, 8, 9]
+empty_array = {}
+
+for num in my_array:
+    if not empty_array.get(num):
+        empty_array[num] = 1
+    else:
+        empty_array[num] += 1
+print(empty_array)
