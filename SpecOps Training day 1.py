@@ -16,3 +16,9 @@ given_file.close()
 
 """Task #2 Տրված ֆայլում պարունակվում է տեքստ։ Իրականացնել ծրագիր, որը ֆայլի մեջ պարունակվող տեքստի բոլոր
     բառերի առաջին տառերը դարձնում է մեծատառ և ձևափոխված ամբողջ տեքստը պահպանում մեկ այլ ֆայլում։"""
+
+with open("File.txt", "r") as text_file:
+    with open("Cap_letter", "w") as new_file:
+        for line in text_file:
+            line = line.title()
+            new_file.write(line)
