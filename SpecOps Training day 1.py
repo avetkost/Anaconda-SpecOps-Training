@@ -2,16 +2,15 @@
 
 sum = 0
 given_file = open(
-    "C://Users//Asus//Desktop//Python//my_root//Classroom//Anaconda-SpecOps-Training//Filee.txt",
+    "Filee.txt",
     "r",
 )
 for i in given_file:
     try:
         sum += int(i)
     except:
-        print(f"{i} is not number")
-    finally:
-        print(f"sum is {sum}")
+        print(f" {i}.is not number")
+print(f"sum is {sum}")
 
 given_file.close()
 
